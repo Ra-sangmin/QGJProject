@@ -517,7 +517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7b61057591c62842b67878a6da3105b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  datasheetTable: {fileID: 11400000, guid: 65a5ce72f963d4dd48fceadc1ad66498, type: 2}
+  mainAct: {fileID: 11400000, guid: 48257dca845a14ceba6a8a831a95c764, type: 2}
+  subAct: {fileID: 0}
+  finalAct: {fileID: 0}
 --- !u!4 &1441461329
 Transform:
   m_ObjectHideFlags: 0

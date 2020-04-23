@@ -4,6 +4,9 @@ using System.Linq;
 using UnityEngine;
 
 namespace GodJunie.QGJ2020 {
+    /// <summary>
+    /// https://docs.google.com/spreadsheets/d/1dFd7pRsrA5yItSj5KlWvYKywTz95z8T-x9MlVgvePPY/edit?usp=sharing
+    /// </summary>
     public class DataManager : MonoBehaviour {
         #region Instance
         protected static DataManager sInstance = null;
@@ -23,16 +26,33 @@ namespace GodJunie.QGJ2020 {
         }
         #endregion
 
-        [SerializeField] private DataSheet datasheetTable;
-        private List<DataSheetData> dataList;
+        [SerializeField] private Parameter parameter;
+        private List<ParameterData> ParameterDataList;
+
+        [SerializeField] private OP_ED op_ED;
+        private List<OP_EDData> op_EDDataList;
+
+        [SerializeField] private MainAct mainAct;
+        private List<MainActData> mainActDataList;
+
+        [SerializeField] private SubAct subAct;
+        private List<SubActData> subActDataList;
+
+        [SerializeField] private FinalAct finalAct;
+        private List<FinalActData> finalActDataList;
 
         private void Awake() {
-            dataList = datasheetTable.dataArray.ToList();
+
+            ParameterDataList = parameter.dataArray.ToList();
+            op_EDDataList = op_ED.dataArray.ToList();
+
+            mainActDataList = mainAct.dataArray.ToList();
+            subActDataList = subAct.dataArray.ToList();
+            finalActDataList = finalAct.dataArray.ToList();
         }
 
         // Start is called before the first frame update
         void Start() {
-
         }
 
         // Update is called once per frame
@@ -40,12 +60,28 @@ namespace GodJunie.QGJ2020 {
 
         }
 
-        public DataSheetData GetData(string id) {
-            return dataList.Find(i => i.Ed == id);
+        public MainActData GetMainData(int id) {
+            return mainActDataList.Find(i => i.Id == id);
         }
 
-        public DataSheetData GetData(int index) {
-            return dataList[index];
+        public SubActData GetSubData(int id)
+        {
+            return subActDataList.Find(i => i.Id == id);
+        }
+
+        public FinalActData GetFinalData(int id)
+        {
+            return finalActDataList.Find(i => i.Id == id);
         }
     }
+}
+
+public enum StoryStateEnum
+{
+    Start,
+    Main,
+    Sub,
+    Final,
+    Finish,
+    Ending
 }

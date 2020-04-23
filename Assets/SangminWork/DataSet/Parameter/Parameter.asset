@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cafa6e0aae7448b83ac0cb2e870618, type: 3}
+  m_Name: Parameter
+  m_EditorClassIdentifier: 
+  SheetName: 2020 QGJ_Datasheet
+  WorksheetName: Parameter
+  dataArray:
+  - parameter: hungry
+    name: "\uB9CC\uBCF5\uB3C4 "
+  - parameter: clean
+    name: "\uCCAD\uACB0\uD568"
+  - parameter: mental
+    name: "\uC815\uC2E0\uB825"
+  - parameter: money
+    name: "\uC18C\uC9C0\uAE08"
