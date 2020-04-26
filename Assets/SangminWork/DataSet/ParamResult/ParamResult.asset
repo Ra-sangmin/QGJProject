@@ -40,51 +40,51 @@ MonoBehaviour:
     cost: -5000
     ed: 
   - id: 4
-    hungry: 53
+    hungry: 37
     clean: -40
-    mental: 31
+    mental: 18
     cost: -19800
     ed: 
   - id: 5
-    hungry: 80
-    clean: -33
-    mental: 29
+    hungry: 29
+    clean: -19
+    mental: 24
     cost: -7500
     ed: 
   - id: 6
-    hungry: 82
-    clean: -93
-    mental: 41
+    hungry: 12
+    clean: -25
+    mental: 26
     cost: -9000
     ed: 
   - id: 7
-    hungry: 19
-    clean: -15
-    mental: 44
+    hungry: 84
+    clean: -60
+    mental: 32
     cost: -2500
     ed: 
   - id: 8
-    hungry: 65
-    clean: -49
-    mental: 19
+    hungry: 91
+    clean: -31
+    mental: 8
     cost: -9000
     ed: 
   - id: 9
-    hungry: 68
-    clean: -19
-    mental: 49
+    hungry: 94
+    clean: -21
+    mental: 10
     cost: -6000
     ed: 
   - id: 10
-    hungry: 59
-    clean: -49
-    mental: 29
+    hungry: 27
+    clean: -35
+    mental: 47
     cost: -8000
     ed: 
   - id: 11
-    hungry: 10
-    clean: -29
-    mental: 41
+    hungry: 92
+    clean: -12
+    mental: 37
     cost: -5000
     ed: 
   - id: 12
@@ -112,519 +112,519 @@ MonoBehaviour:
     cost: -6500
     ed: 
   - id: 16
-    hungry: 34
-    clean: -46
-    mental: 0
+    hungry: 52
+    clean: -65
+    mental: 35
     cost: -9900
     ed: 
   - id: 17
-    hungry: 98
-    clean: -7
-    mental: 43
+    hungry: 15
+    clean: -16
+    mental: 42
     cost: -9900
     ed: 
   - id: 18
-    hungry: 13
-    clean: -98
-    mental: 28
+    hungry: 43
+    clean: -14
+    mental: 0
     cost: -9900
     ed: 
   - id: 19
     hungry: -30
     clean: -30
-    mental: 6
+    mental: 16
     cost: 0
     ed: 
   - id: 20
-    hungry: 2
-    clean: -7
-    mental: 41
-    cost: -4600
+    hungry: 14
+    clean: -15
+    mental: 23
+    cost: -8600
     ed: 
   - id: 21
-    hungry: 35
-    clean: -85
-    mental: 47
-    cost: -8800
+    hungry: 85
+    clean: -13
+    mental: 44
+    cost: -7400
     ed: 
   - id: 22
-    hungry: 41
-    clean: -85
-    mental: 15
-    cost: -8100
+    hungry: 51
+    clean: -68
+    mental: 26
+    cost: -7000
     ed: 
   - id: 23
-    hungry: -62
-    clean: -1
-    mental: 19
+    hungry: -17
+    clean: -65
+    mental: 46
     cost: 0
     ed: 
   - id: 24
-    hungry: 17
-    clean: -4
-    mental: 48
-    cost: -5200
+    hungry: 64
+    clean: -20
+    mental: 49
+    cost: -9400
     ed: 
   - id: 25
-    hungry: 31
-    clean: -63
-    mental: 1
-    cost: -1100
+    hungry: 77
+    clean: -38
+    mental: 48
+    cost: -300
     ed: 
   - id: 26
-    hungry: 44
-    clean: -72
-    mental: 41
-    cost: -7200
+    hungry: 34
+    clean: -58
+    mental: 13
+    cost: -9500
     ed: 
   - id: 27
-    hungry: 30
-    clean: -99
-    mental: 43
-    cost: -3800
+    hungry: 77
+    clean: -20
+    mental: 36
+    cost: -2700
     ed: 
   - id: 28
-    hungry: 6
-    clean: -63
-    mental: 9
+    hungry: 28
+    clean: -40
+    mental: 2
     cost: -3000
     ed: 
   - id: 29
-    hungry: 93
-    clean: -82
-    mental: 4
+    hungry: 46
+    clean: -51
+    mental: 10
     cost: -5000
     ed: 
   - id: 30
-    hungry: 65
-    clean: -51
-    mental: 4
+    hungry: 1
+    clean: -10
+    mental: 1
     cost: -3500
     ed: 
   - id: 31
-    hungry: -2
-    clean: -6
-    mental: 1
+    hungry: -1
+    clean: -9
+    mental: 7
     cost: 0
     ed: 
   - id: 32
     hungry: -30
     clean: -30
-    mental: 14
+    mental: 18
     cost: 0
     ed: 
   - id: 33
-    hungry: -83
-    clean: -39
-    mental: 31
+    hungry: -64
+    clean: -37
+    mental: 33
     cost: 0
     ed: 
   - id: 34
-    hungry: -39
-    clean: -51
-    mental: 24
+    hungry: -54
+    clean: -69
+    mental: 2
     cost: 0
     ed: 
   - id: 35
-    hungry: -21
-    clean: -22
-    mental: 24
-    cost: 0
-    ed: 
-  - id: 36
-    hungry: -4
-    clean: -24
-    mental: 6
-    cost: 0
-    ed: 
-  - id: 37
-    hungry: -37
-    clean: -86
-    mental: 13
-    cost: 0
-    ed: 
-  - id: 38
-    hungry: -85
-    clean: -7
-    mental: 19
-    cost: 0
-    ed: 
-  - id: 39
-    hungry: -92
-    clean: -33
-    mental: 18
-    cost: 0
-    ed: 
-  - id: 40
-    hungry: -61
-    clean: -45
-    mental: 18
-    cost: 0
-    ed: 
-  - id: 41
-    hungry: -98
-    clean: -19
+    hungry: -9
+    clean: -54
     mental: 21
     cost: 0
     ed: 
+  - id: 36
+    hungry: -57
+    clean: -20
+    mental: 26
+    cost: 0
+    ed: 
+  - id: 37
+    hungry: -53
+    clean: -40
+    mental: 2
+    cost: 0
+    ed: 
+  - id: 38
+    hungry: -55
+    clean: -50
+    mental: 11
+    cost: 0
+    ed: 
+  - id: 39
+    hungry: -28
+    clean: -3
+    mental: 20
+    cost: 0
+    ed: 
+  - id: 40
+    hungry: -41
+    clean: -18
+    mental: 8
+    cost: 0
+    ed: 
+  - id: 41
+    hungry: -69
+    clean: -2
+    mental: 14
+    cost: 0
+    ed: 
   - id: 42
-    hungry: -66
-    clean: -88
-    mental: 7
+    hungry: -13
+    clean: -18
+    mental: 24
     cost: -5000
     ed: 
   - id: 43
     hungry: 10
-    clean: -75
-    mental: -57
+    clean: -36
+    mental: -53
     cost: -7000
     ed: 
   - id: 44
-    hungry: -44
-    clean: -66
-    mental: -40
+    hungry: -13
+    clean: -50
+    mental: -51
     cost: -2400
     ed: 
   - id: 45
-    hungry: -57
-    clean: -26
-    mental: -43
-    cost: -1300
+    hungry: -21
+    clean: -15
+    mental: -12
+    cost: -1600
     ed: 
   - id: 46
-    hungry: -77
-    clean: -55
-    mental: -43
+    hungry: -26
+    clean: -27
+    mental: -5
     cost: -1200
     ed: 
   - id: 47
-    hungry: -15
-    clean: -17
-    mental: -64
-    cost: 11
+    hungry: -8
+    clean: -43
+    mental: -56
+    cost: 13
     ed: 
   - id: 48
-    hungry: -77
-    clean: -52
-    mental: -35
+    hungry: -32
+    clean: -67
+    mental: -40
     cost: 0
     ed: 
   - id: 49
-    hungry: -23
-    clean: -35
-    mental: 25
+    hungry: -15
+    clean: -33
+    mental: 7
     cost: 0
     ed: 
   - id: 50
-    hungry: -96
-    clean: -91
-    mental: -93
+    hungry: -5
+    clean: -58
+    mental: -2
     cost: 0
     ed: 
   - id: 51
-    hungry: -41
-    clean: -87
-    mental: 5
+    hungry: -19
+    clean: -65
+    mental: 4
     cost: 0
     ed: 
   - id: 52
-    hungry: -20
-    clean: -85
-    mental: -51
+    hungry: -3
+    clean: -15
+    mental: -57
     cost: 0
     ed: 
   - id: 53
-    hungry: -44
-    clean: -23
-    mental: -59
+    hungry: -55
+    clean: -69
+    mental: -24
     cost: 500000
     ed: ed03
   - id: 54
-    hungry: -77
-    clean: -15
-    mental: -4
+    hungry: -31
+    clean: -20
+    mental: -32
     cost: 0
     ed: 
   - id: 55
-    hungry: -29
-    clean: -18
-    mental: -95
-    cost: -900
+    hungry: -57
+    clean: -22
+    mental: -7
+    cost: -4500
     ed: 
   - id: 56
-    hungry: -79
-    clean: -28
-    mental: -10
-    cost: -6800
+    hungry: -20
+    clean: -42
+    mental: -52
+    cost: -9300
     ed: 
   - id: 57
-    hungry: -65
-    clean: -35
-    mental: -67
-    cost: -2200
+    hungry: -57
+    clean: -17
+    mental: -40
+    cost: -800
     ed: 
   - id: 58
-    hungry: -37
-    clean: -81
-    mental: -40
-    cost: -1000
-    ed: 
-  - id: 59
-    hungry: -88
-    clean: -34
-    mental: -69
-    cost: -8700
-    ed: 
-  - id: 60
-    hungry: -90
-    clean: -33
-    mental: -61
-    cost: -3400
-    ed: 
-  - id: 61
-    hungry: -73
-    clean: -25
-    mental: -76
-    cost: -2300
-    ed: 
-  - id: 62
-    hungry: -23
-    clean: -81
-    mental: -67
-    cost: -4400
-    ed: 
-  - id: 63
-    hungry: -95
-    clean: -52
-    mental: -27
-    cost: -9900
-    ed: 
-  - id: 64
-    hungry: -26
-    clean: -69
-    mental: -32
-    cost: -3000
-    ed: 
-  - id: 65
-    hungry: -69
-    clean: 8
-    mental: -37
+    hungry: -44
+    clean: -46
+    mental: -33
     cost: -9100
     ed: 
+  - id: 59
+    hungry: -16
+    clean: -67
+    mental: -12
+    cost: -3900
+    ed: 
+  - id: 60
+    hungry: -16
+    clean: -25
+    mental: -44
+    cost: -3200
+    ed: 
+  - id: 61
+    hungry: -31
+    clean: -53
+    mental: -69
+    cost: -200
+    ed: 
+  - id: 62
+    hungry: -26
+    clean: -33
+    mental: -29
+    cost: -8300
+    ed: 
+  - id: 63
+    hungry: -37
+    clean: -46
+    mental: -47
+    cost: -5300
+    ed: 
+  - id: 64
+    hungry: -59
+    clean: -44
+    mental: -44
+    cost: -6600
+    ed: 
+  - id: 65
+    hungry: -46
+    clean: 11
+    mental: -31
+    cost: -1100
+    ed: 
   - id: 66
-    hungry: -43
-    clean: 13
-    mental: -71
+    hungry: -33
+    clean: 21
+    mental: 41
     cost: 20000
     ed: 
   - id: 67
-    hungry: -15
-    clean: 6
-    mental: -98
-    cost: -2600
+    hungry: -36
+    clean: 1
+    mental: -19
+    cost: 0
     ed: 
   - id: 68
-    hungry: -43
-    clean: 30
-    mental: -33
-    cost: -4200
+    hungry: -31
+    clean: 43
+    mental: 4
+    cost: 0
     ed: 
   - id: 69
-    hungry: -9
-    clean: 4
-    mental: -94
-    cost: -2100
+    hungry: -16
+    clean: 11
+    mental: 14
+    cost: 0
     ed: 
   - id: 70
-    hungry: -21
-    clean: 22
-    mental: -97
-    cost: -5500
+    hungry: -25
+    clean: 44
+    mental: 4
+    cost: 0
     ed: 
   - id: 71
-    hungry: -56
-    clean: 26
-    mental: -3
-    cost: -7700
+    hungry: -12
+    clean: 39
+    mental: 19
+    cost: 0
     ed: 
   - id: 72
-    hungry: -35
-    clean: 34
-    mental: -23
-    cost: -7700
+    hungry: -28
+    clean: 21
+    mental: -25
+    cost: -1100
     ed: 
   - id: 73
-    hungry: -67
-    clean: 7
-    mental: -57
-    cost: -6800
+    hungry: -34
+    clean: 13
+    mental: 17
+    cost: -500
     ed: 
   - id: 74
-    hungry: -50
-    clean: 42
-    mental: -64
-    cost: -200
+    hungry: -24
+    clean: -6
+    mental: 3
+    cost: -1100
     ed: 
   - id: 75
-    hungry: -67
-    clean: 15
-    mental: -55
-    cost: -8800
+    hungry: -66
+    clean: 32
+    mental: -19
+    cost: -1100
     ed: 
   - id: 76
-    hungry: -72
-    clean: -89
-    mental: -18
+    hungry: -66
+    clean: -20
+    mental: 10
     cost: 0
     ed: 
   - id: 77
-    hungry: -41
-    clean: -97
-    mental: -91
+    hungry: -9
+    clean: -17
+    mental: 44
     cost: 0
     ed: 
   - id: 78
-    hungry: -46
-    clean: -79
-    mental: -41
+    hungry: -18
+    clean: -29
+    mental: 13
     cost: 0
     ed: 
   - id: 79
-    hungry: -75
-    clean: -6
-    mental: -93
+    hungry: -26
+    clean: -28
+    mental: 20
     cost: 0
     ed: 
   - id: 80
-    hungry: -32
-    clean: -69
-    mental: -43
+    hungry: -58
+    clean: -52
+    mental: 45
     cost: 0
     ed: 
   - id: 81
-    hungry: -5
-    clean: -40
-    mental: -40
+    hungry: -39
+    clean: 33
+    mental: 22
     cost: 0
     ed: 
   - id: 82
-    hungry: -15
-    clean: -11
-    mental: -36
+    hungry: -27
+    clean: -69
+    mental: 25
     cost: 0
     ed: 
   - id: 83
-    hungry: -53
-    clean: -27
-    mental: -31
+    hungry: -69
+    clean: -22
+    mental: 19
     cost: 0
     ed: 
   - id: 84
-    hungry: -14
-    clean: -80
-    mental: -73
-    cost: -200
+    hungry: -41
+    clean: -43
+    mental: 37
+    cost: 0
     ed: 
   - id: 85
-    hungry: -40
-    clean: -32
-    mental: -57
-    cost: -5300
+    hungry: -54
+    clean: -60
+    mental: -31
+    cost: 0
     ed: 
   - id: 86
-    hungry: -18
-    clean: -80
-    mental: -66
-    cost: -5500
+    hungry: -55
+    clean: -22
+    mental: 8
+    cost: 0
     ed: 
   - id: 87
-    hungry: -47
-    clean: -42
-    mental: -1
-    cost: -9000
+    hungry: -38
+    clean: -57
+    mental: -9
+    cost: 0
     ed: 
   - id: 88
-    hungry: -6
-    clean: -24
-    mental: -24
-    cost: -6200
+    hungry: -49
+    clean: -45
+    mental: 35
+    cost: 0
     ed: 
   - id: 89
-    hungry: -99
-    clean: -39
-    mental: -68
-    cost: -6400
+    hungry: -12
+    clean: -28
+    mental: 37
+    cost: 0
     ed: 
   - id: 90
-    hungry: -93
-    clean: -69
-    mental: -88
-    cost: -900
+    hungry: -57
+    clean: -46
+    mental: 3
+    cost: 0
     ed: 
   - id: 91
-    hungry: -92
-    clean: -43
-    mental: -8
-    cost: -1900
+    hungry: -50
+    clean: -66
+    mental: 28
+    cost: -50000
     ed: 
   - id: 92
-    hungry: -50
-    clean: -6
-    mental: -53
-    cost: -7500
+    hungry: -36
+    clean: -31
+    mental: -3
+    cost: 0
     ed: 
   - id: 93
-    hungry: -41
-    clean: -82
-    mental: -91
-    cost: -4200
+    hungry: -6
+    clean: -20
+    mental: 33
+    cost: 0
     ed: 
   - id: 94
-    hungry: -90
-    clean: -73
-    mental: -64
+    hungry: -24
+    clean: -64
+    mental: -49
     cost: 10000
     ed: 
   - id: 95
-    hungry: -55
-    clean: -89
-    mental: -81
+    hungry: -68
+    clean: -32
+    mental: -44
     cost: 80000
     ed: 
   - id: 96
-    hungry: -85
-    clean: -29
-    mental: -15
+    hungry: -6
+    clean: -6
+    mental: -34
     cost: 20000
     ed: 
   - id: 97
-    hungry: -84
-    clean: -45
-    mental: -36
+    hungry: -25
+    clean: -24
+    mental: -1
     cost: 90
     ed: 
   - id: 98
     hungry: 10
-    clean: -53
-    mental: -65
+    clean: -26
+    mental: -35
     cost: 20000
     ed: ed03
   - id: 99
-    hungry: -99
-    clean: -78
-    mental: -89
+    hungry: -43
+    clean: -32
+    mental: 43
     cost: 20000
     ed: 
   - id: 100
-    hungry: -28
-    clean: -38
-    mental: -16
+    hungry: -42
+    clean: -14
+    mental: -49
     cost: 100000
     ed: ed03
   - id: 101
-    hungry: -87
-    clean: -81
-    mental: -81
+    hungry: -14
+    clean: -6
+    mental: 34
     cost: 0
     ed: 
   - id: 102
@@ -640,219 +640,219 @@ MonoBehaviour:
     cost: 100000
     ed: ed03
   - id: 104
-    hungry: -57
-    clean: -48
-    mental: -47
+    hungry: -3
+    clean: -29
+    mental: -7
     cost: 100
     ed: 
   - id: 105
-    hungry: -74
-    clean: -58
-    mental: -97
+    hungry: -68
+    clean: -15
+    mental: -33
     cost: -1000
     ed: 
   - id: 106
-    hungry: -42
-    clean: -5
-    mental: -31
+    hungry: -58
+    clean: -17
+    mental: 18
     cost: 5000
     ed: 
   - id: 107
-    hungry: -11
-    clean: -79
-    mental: -28
+    hungry: -30
+    clean: 0
+    mental: 10
     cost: 10000
     ed: 
   - id: 108
-    hungry: -49
-    clean: -48
-    mental: -57
+    hungry: -6
+    clean: -23
+    mental: -60
     cost: 100000
     ed: ed03
   - id: 109
-    hungry: -22
-    clean: -60
-    mental: -17
+    hungry: -8
+    clean: -47
+    mental: -47
     cost: 10
     ed: 
   - id: 110
-    hungry: -50
-    clean: -21
-    mental: -21
+    hungry: -29
+    clean: -28
+    mental: -26
     cost: -5000
     ed: 
   - id: 111
-    hungry: -4
-    clean: -36
-    mental: -9
+    hungry: 0
+    clean: -13
+    mental: -22
     cost: 200000
     ed: ed03
   - id: 112
-    hungry: -43
-    clean: -65
-    mental: -2
+    hungry: -24
+    clean: -28
+    mental: 14
     cost: 100
     ed: 
   - id: 113
     hungry: -35
-    clean: -25
-    mental: -41
+    clean: -3
+    mental: -23
     cost: 1000
     ed: 
   - id: 114
-    hungry: -26
-    clean: -13
-    mental: -48
+    hungry: -16
+    clean: -27
+    mental: 31
     cost: 0
     ed: 
   - id: 115
-    hungry: -83
-    clean: -99
-    mental: -25
+    hungry: -18
+    clean: -8
+    mental: 2
     cost: 0
     ed: 
   - id: 116
-    hungry: -87
-    clean: -54
-    mental: -100
+    hungry: -20
+    clean: -39
+    mental: 27
     cost: 0
     ed: 
   - id: 117
-    hungry: -72
-    clean: -46
-    mental: -79
+    hungry: -23
+    clean: -31
+    mental: -2
     cost: 0
     ed: 
   - id: 118
-    hungry: -98
-    clean: -51
-    mental: -64
+    hungry: -6
+    clean: -4
+    mental: 30
     cost: 0
     ed: 
   - id: 119
-    hungry: -22
-    clean: -15
-    mental: -7
+    hungry: -9
+    clean: -26
+    mental: 24
     cost: 0
     ed: 
   - id: 120
-    hungry: -26
-    clean: -85
-    mental: -23
+    hungry: -8
+    clean: -11
+    mental: 26
     cost: 0
     ed: 
   - id: 121
-    hungry: -34
-    clean: -42
-    mental: -14
+    hungry: -6
+    clean: -23
+    mental: 2
     cost: 0
     ed: 
   - id: 122
-    hungry: -71
-    clean: -48
-    mental: -91
+    hungry: -28
+    clean: -3
+    mental: 16
     cost: 0
     ed: 
   - id: 123
-    hungry: -48
-    clean: -17
-    mental: -36
+    hungry: -1
+    clean: -28
+    mental: 40
     cost: 0
     ed: 
   - id: 124
-    hungry: -79
-    clean: -21
-    mental: -30
+    hungry: -11
+    clean: -17
+    mental: -9
     cost: 0
     ed: 
   - id: 125
     hungry: -3
-    clean: -1
-    mental: -89
+    clean: -13
+    mental: 7
     cost: 0
     ed: 
   - id: 126
-    hungry: -90
-    clean: -62
-    mental: -56
+    hungry: -4
+    clean: -8
+    mental: -57
     cost: 0
     ed: 
   - id: 127
-    hungry: -31
-    clean: -47
-    mental: -99
-    cost: 0
+    hungry: -27
+    clean: -29
+    mental: 28
+    cost: -10000
     ed: 
   - id: 128
-    hungry: -94
-    clean: -76
-    mental: -55
+    hungry: -9
+    clean: -18
+    mental: 11
     cost: 0
     ed: 
   - id: 129
-    hungry: -59
-    clean: -47
+    hungry: -26
+    clean: -22
     mental: -80
     cost: 0
     ed: 
   - id: 130
-    hungry: -5
-    clean: -21
+    hungry: -4
+    clean: -17
     mental: 10
     cost: 0
     ed: 
   - id: 131
-    hungry: -94
-    clean: -92
+    hungry: -24
+    clean: -35
     mental: 50
     cost: 0
     ed: 
   - id: 132
-    hungry: -32
-    clean: -11
-    mental: -90
+    hungry: -2
+    clean: -20
+    mental: -52
     cost: 0
     ed: 
   - id: 133
-    hungry: -10
-    clean: -10
+    hungry: -24
+    clean: -33
     mental: 20
     cost: 0
     ed: 
   - id: 134
-    hungry: -10
-    clean: -10
+    hungry: -5
+    clean: -32
     mental: 10
     cost: 0
     ed: 
   - id: 135
-    hungry: -10
-    clean: -20
+    hungry: -3
+    clean: -17
     mental: 80
     cost: 0
     ed: 
   - id: 136
-    hungry: -30
-    clean: -20
+    hungry: -9
+    clean: -35
     mental: 10
     cost: 0
     ed: 
   - id: 137
-    hungry: -33
-    clean: -93
+    hungry: -22
+    clean: -20
     mental: -60
     cost: 0
     ed: 
   - id: 138
-    hungry: -10
-    clean: -15
+    hungry: -2
+    clean: -3
     mental: -70
     cost: 0
     ed: 
   - id: 139
     hungry: -9
     clean: -14
-    mental: -8
+    mental: -29
     cost: 0
     ed: 
   - id: 140
@@ -870,7 +870,7 @@ MonoBehaviour:
   - id: 142
     hungry: -6
     clean: -11
-    mental: -41
+    mental: -22
     cost: 0
     ed: 
   - id: 143

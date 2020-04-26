@@ -48,7 +48,7 @@ MonoBehaviour:
     description: "\uBB58 \uD558\uBA74\uC11C \uB3C8\uC744 \uBC8C\uC5B4\uBCFC\uAE4C? "
     nextacts: 3e0000003f00000040000000410000004200000043000000
   - id: 8
-    name: "\uC5D4\uD130\uD14C\uC778\uBA3C\uD2B8"
+    name: "\uBCFC\uAC70\uB9AC"
     description: "\uBB58 \uBCFC\uAE4C?"
     nextacts: 4400000045000000460000004700000048000000490000004a000000
   - id: 9
