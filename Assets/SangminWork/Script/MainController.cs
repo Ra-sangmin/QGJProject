@@ -68,12 +68,13 @@ public class MainController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Init();
         StoryReset();
     }
 
     void Init()
     {
+        dayCnt = 1;
+
         hungry = DataManager.Instance.ParameterDataList[0].Value;
         clean = DataManager.Instance.ParameterDataList[1].Value;
         mental = DataManager.Instance.ParameterDataList[2].Value;
@@ -86,6 +87,8 @@ public class MainController : MonoBehaviour
 
         if (storyStateEnum == StoryStateEnum.Start)
         {
+            Init();
+
             mainActList = new List<MainActData>();
 
             var mainList = DataManager.Instance.mainActDataList;
@@ -178,7 +181,7 @@ public class MainController : MonoBehaviour
 
             msgText.text = string.Format(  "오늘은 전염병으로 자가격리를 실시한 지 {0}일째." +
                                            "\n나의 상태는 " +
-                                           "\n배고픔: {1} %" +
+                                           "\n배부름: {1} %" +
                                            "\n감염도: {2} %" +
                                            "\n멘탈 : {3} %" +
                                            "\n가진돈 : {4}원이다." +
@@ -244,6 +247,10 @@ public class MainController : MonoBehaviour
             finalSelectId = subActData.Nextacts[state];
             storyStateEnum = StoryStateEnum.Final;
         }
+        else if (storyStateEnum == StoryStateEnum.Ending)
+        {
+            storyStateEnum = StoryStateEnum.Start;
+        }
 
         StoryReset();
 
@@ -260,7 +267,7 @@ public class MainController : MonoBehaviour
         switch (playerStatusEnum)
         {
             case PlayerStatusEnum.Hungry:
-                headStr = "배고픔이";
+                headStr = "배부름이";
                 currentValue = hungry;
                 beforeValue = beforeHungry;
                 addValue = addHungry;
@@ -350,7 +357,6 @@ public class MainController : MonoBehaviour
         this.endingId = endingId;
         storyStateEnum = StoryStateEnum.Ending;
 
-        msgText.gameObject.SetActive(false);
         selectResultText.gameObject.SetActive(false);
         resultText.gameObject.SetActive(false);
         foreach (var selectText in selectTextList)
@@ -358,7 +364,11 @@ public class MainController : MonoBehaviour
             selectText.gameObject.SetActive(false);
         }
 
-        endingText.gameObject.SetActive(true);
-        endingText.text = endingId;
+
+        OP_EDData data = DataManager.Instance.GetOP_EDData(endingId);
+        msgText.text = data.Desc;
+
+        dirextFinalBtn.gameObject.SetActive(true);
+
     }
 }

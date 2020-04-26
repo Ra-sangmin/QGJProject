@@ -82,6 +82,11 @@ namespace GodJunie.QGJ2020 {
         {
             return paramResultList.Find(i => i.Id == id);
         }
+
+        public OP_EDData GetOP_EDData(string id)
+        {
+            return op_EDDataList.Find(i => i.Id == id);
+        }
     }
 }
 
