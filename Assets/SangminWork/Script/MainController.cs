@@ -120,7 +120,25 @@ public class MainController : MonoBehaviour
         else if (storyStateEnum == StoryStateEnum.Main)
         {
             mainActData = DataManager.Instance.GetMainData(mainSelectId);
-            foreach (var id in mainActData.Nextacts)
+
+            List<int> intList = new List<int>();
+
+            while (true)
+            {
+                int ranIndex = Random.Range(0, mainActData.Nextacts.Length);
+
+                if (intList.Contains(ranIndex) == false)
+                {
+                    intList.Add(ranIndex);
+                }
+
+                if (intList.Count > 3 || intList.Count == mainActData.Nextacts.Length)
+                {
+                    break;
+                }
+            }
+
+            foreach (var id in intList)
             {
                 SubActData data = DataManager.Instance.GetSubData(id);
                 selectStrList.Add(data.Name);
@@ -130,18 +148,35 @@ public class MainController : MonoBehaviour
         {
             subActData = DataManager.Instance.GetSubData(subSelectId);
 
-            foreach (var id in subActData.Nextacts)
+            if (subActData.Nextacts.Length == 0)
             {
-                FinalActData data = DataManager.Instance.GetFinalData(id);
-                
-                if (data.Name == string.Empty)
+                selectResultText.gameObject.SetActive(false);
+                dirextFinalBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                List<int> intList = new List<int>();
+
+                while (true)
                 {
-                    selectResultText.gameObject.SetActive(false);
-                    dirextFinalBtn.gameObject.SetActive(true);
-                    break;
+                    int ranIndex = Random.Range(0, subActData.Nextacts.Length);
+
+                    if (intList.Contains(ranIndex) == false)
+                    {
+                        intList.Add(ranIndex);
+                    }
+
+                    if (intList.Count > 3 || intList.Count == subActData.Nextacts.Length)
+                    {
+                        break;
+                    }
                 }
 
-                selectStrList.Add(data.Name);
+                foreach (var id in intList)
+                {
+                    FinalActData data = DataManager.Instance.GetFinalData(id);
+                    selectStrList.Add(data.Name);
+                }
             }
 
         }
