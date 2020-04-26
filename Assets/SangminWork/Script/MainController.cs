@@ -152,7 +152,7 @@ public class MainController : MonoBehaviour
         {
             subActData = DataManager.Instance.GetSubData(subSelectId);
 
-            if (subActData.Nextacts.Length == 0)
+            if (subActData.Nextacts.Length == 1)
             {
                 selectResultText.gameObject.SetActive(false);
                 dirextFinalBtn.gameObject.SetActive(true);
