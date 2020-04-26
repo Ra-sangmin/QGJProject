@@ -18,6 +18,7 @@ public class MainController : MonoBehaviour
     int finalSelectId;
     string endingId;
 
+    ParamResultData raramResultData = null;
 
     string startMsg = string.Empty;
 
@@ -53,6 +54,7 @@ public class MainController : MonoBehaviour
     int beforeCost = 10000;
 
     List<string> selectStrList = new List<string>();
+    List<MainActData> mainActList = new List<MainActData>();
 
     [SerializeField] Text selectResultText;
     [SerializeField] Text resultText;
@@ -76,8 +78,31 @@ public class MainController : MonoBehaviour
 
         if (storyStateEnum == StoryStateEnum.Start)
         {
-            mainActData = DataManager.Instance.GetMainData(0);
-            selectStrList.Add("먹기");
+            mainActList = new List<MainActData>();
+
+            var mainList = DataManager.Instance.mainActDataList;
+
+            while (true)
+            {
+                int ranIndex = Random.Range(0, mainList.Count);
+
+                mainActData = DataManager.Instance.GetMainData(ranIndex);
+
+                if (mainActData != null && !mainActList.Contains(mainActData))
+                {
+                    mainActList.Add(mainActData);
+                }
+
+                if (mainActList.Count > 3)
+                {    
+                    break;
+                }
+            }
+
+            foreach (var mainAct in mainActList)
+            {
+                selectStrList.Add(mainAct.Name);
+            }
         }
         else if (storyStateEnum == StoryStateEnum.Main)
         {
@@ -101,20 +126,23 @@ public class MainController : MonoBehaviour
         {
             finalActData = DataManager.Instance.GetFinalData(finalSelectId);
 
+            raramResultData = DataManager.Instance.GetParamResultData(finalActData.Nextacts);
+            //finalActData.
+
             beforeHungry = hungry;
-            addHungry = finalActData.Hungry;
+            addHungry = raramResultData.Hungry;
             hungry += addHungry;
 
             beforeClean = clean;
-            addClean = finalActData.Clean;
+            addClean = raramResultData.Clean;
             clean += addClean;
 
             beforeMental = mental;
-            addMental = finalActData.Mental;
+            addMental = raramResultData.Mental;
             mental += addMental;
 
             beforeCost = cost;
-            addCost = finalActData.Cost;
+            addCost = raramResultData.Cost;
             cost += addCost;
         }
 
@@ -165,6 +193,11 @@ public class MainController : MonoBehaviour
 
         for (int i = 0; i < selectStrList.Count; i++)
         {
+            if (i >= selectTextList.Count)
+            {
+                break;
+            }
+
             selectTextList[i].text = string.Format("{0}. {1}",(i+1),selectStrList[i]);
             selectTextList[i].gameObject.SetActive(true);
         }
@@ -174,7 +207,7 @@ public class MainController : MonoBehaviour
     {
         if (storyStateEnum ==  StoryStateEnum.Start)
         {
-            mainSelectId = state;
+            mainSelectId = mainActList[state].Id;
             storyStateEnum = StoryStateEnum.Main;
         }
         else if (storyStateEnum == StoryStateEnum.Main)
@@ -203,25 +236,25 @@ public class MainController : MonoBehaviour
         switch (playerStatusEnum)
         {
             case PlayerStatusEnum.Hungry:
-                headStr = "만복도가";
+                headStr = "배고픔이";
                 currentValue = hungry;
                 beforeValue = beforeHungry;
                 addValue = addHungry;
                 break;
             case PlayerStatusEnum.Clean:
-                headStr = "청결함이";
+                headStr = "감염도가";
                 currentValue = clean;
                 beforeValue = beforeClean;
                 addValue = addClean;
                 break;
             case PlayerStatusEnum.Mental:
-                headStr = "정신력이";
+                headStr = "멘탈이";
                 currentValue = mental;
                 beforeValue = beforeMental;
                 addValue = addMental;
                 break;
             case PlayerStatusEnum.Cost:
-                headStr = "소지금이";
+                headStr = "가진돈이";
                 currentValue = cost;
                 beforeValue = beforeCost;
                 addValue = addCost;

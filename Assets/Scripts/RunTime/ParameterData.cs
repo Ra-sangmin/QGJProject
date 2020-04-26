@@ -16,4 +16,8 @@ public class ParameterData
   string name;
   public string Name { get {return name; } set { this.name = value;} }
   
+  [SerializeField]
+  int value;
+  public int Value { get {return value; } set { this.value = value;} }
+  
 }

@@ -33,13 +33,16 @@ namespace GodJunie.QGJ2020 {
         private List<OP_EDData> op_EDDataList;
 
         [SerializeField] private MainAct mainAct;
-        private List<MainActData> mainActDataList;
+        public List<MainActData> mainActDataList;
 
         [SerializeField] private SubAct subAct;
         private List<SubActData> subActDataList;
 
         [SerializeField] private FinalAct finalAct;
         private List<FinalActData> finalActDataList;
+
+        [SerializeField] private ParamResult paramResult;
+        private List<ParamResultData> paramResultList;
 
         private void Awake() {
 
@@ -49,6 +52,7 @@ namespace GodJunie.QGJ2020 {
             mainActDataList = mainAct.dataArray.ToList();
             subActDataList = subAct.dataArray.ToList();
             finalActDataList = finalAct.dataArray.ToList();
+            paramResultList = paramResult.dataArray.ToList();
         }
 
         // Start is called before the first frame update
@@ -72,6 +76,11 @@ namespace GodJunie.QGJ2020 {
         public FinalActData GetFinalData(int id)
         {
             return finalActDataList.Find(i => i.Id == id);
+        }
+
+        public ParamResultData GetParamResultData(int id)
+        {
+            return paramResultList.Find(i => i.Id == id);
         }
     }
 }

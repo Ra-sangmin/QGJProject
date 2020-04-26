@@ -21,23 +21,7 @@ public class FinalActData
   public string Description { get {return description; } set { this.description = value;} }
   
   [SerializeField]
-  int hungry;
-  public int Hungry { get {return hungry; } set { this.hungry = value;} }
-  
-  [SerializeField]
-  int clean;
-  public int Clean { get {return clean; } set { this.clean = value;} }
-  
-  [SerializeField]
-  int mental;
-  public int Mental { get {return mental; } set { this.mental = value;} }
-  
-  [SerializeField]
-  int cost;
-  public int Cost { get {return cost; } set { this.cost = value;} }
-  
-  [SerializeField]
-  int ed;
-  public int Ed { get {return ed; } set { this.ed = value;} }
+  int nextacts;
+  public int Nextacts { get {return nextacts; } set { this.nextacts = value;} }
   
 }

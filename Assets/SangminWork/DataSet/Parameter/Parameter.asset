@@ -16,10 +16,14 @@ MonoBehaviour:
   WorksheetName: Parameter
   dataArray:
   - parameter: hungry
-    name: "\uB9CC\uBCF5\uB3C4 "
+    name: "\uBC30\uBD80\uB984"
+    value: 100
   - parameter: clean
-    name: "\uCCAD\uACB0\uD568"
+    name: "\uAC10\uC5FC\uB3C4"
+    value: 0
   - parameter: mental
-    name: "\uC815\uC2E0\uB825"
+    name: "\uBA58\uD0C8"
+    value: 100
   - parameter: money
-    name: "\uC18C\uC9C0\uAE08"
+    name: "\uAC00\uC9C4\uB3C8"
+    value: 10000
