@@ -145,7 +145,11 @@ public class MainController : MonoBehaviour
             foreach (var id in intList)
             {
                 SubActData data = DataManager.Instance.GetSubData(id);
-                selectStrList.Add(data.Name);
+
+                if (data.Name != string.Empty)
+                {
+                    selectStrList.Add(data.Name);
+                }
             }
         }
         else if (storyStateEnum == StoryStateEnum.Sub)
@@ -181,7 +185,12 @@ public class MainController : MonoBehaviour
                 foreach (var id in intList)
                 {
                     FinalActData data = DataManager.Instance.GetFinalData(id);
-                    selectStrList.Add(data.Name);
+
+                    if (data.Name != string.Empty)
+                    {
+                        selectStrList.Add(data.Name);
+                    }
+                    
                 }
             }
 
