@@ -91,8 +91,6 @@ public class MainController : MonoBehaviour
 
         if (storyStateEnum == StoryStateEnum.Start)
         {
-            Init();
-
             mainActList = new List<MainActData>();
 
             var mainList = DataManager.Instance.mainActDataList;
@@ -256,6 +254,8 @@ public class MainController : MonoBehaviour
             storyStateEnum = StoryStateEnum.Start;
 
             canvasGroup.gameObject.SetActive(false);
+
+            Init();
         }
 
         StoryReset();
