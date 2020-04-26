@@ -121,15 +121,19 @@ public class MainController : MonoBehaviour
         {
             mainActData = DataManager.Instance.GetMainData(mainSelectId);
 
+            Debug.LogWarning("mainActData.Id = "+mainActData.Id);
+
             List<int> intList = new List<int>();
 
             while (true)
             {
                 int ranIndex = Random.Range(0, mainActData.Nextacts.Length);
 
-                if (intList.Contains(ranIndex) == false)
+                int targetID = mainActData.Nextacts[ranIndex];
+
+                if (intList.Contains(targetID) == false)
                 {
-                    intList.Add(ranIndex);
+                    intList.Add(targetID);
                 }
 
                 if (intList.Count > 3 || intList.Count == mainActData.Nextacts.Length)
@@ -161,9 +165,11 @@ public class MainController : MonoBehaviour
                 {
                     int ranIndex = Random.Range(0, subActData.Nextacts.Length);
 
-                    if (intList.Contains(ranIndex) == false)
+                    int targetID = subActData.Nextacts[ranIndex];
+
+                    if (intList.Contains(targetID) == false)
                     {
-                        intList.Add(ranIndex);
+                        intList.Add(targetID);
                     }
 
                     if (intList.Count > 3 || intList.Count == subActData.Nextacts.Length)
