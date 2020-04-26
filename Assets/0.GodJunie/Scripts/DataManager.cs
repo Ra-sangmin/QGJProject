@@ -27,7 +27,7 @@ namespace GodJunie.QGJ2020 {
         #endregion
 
         [SerializeField] private Parameter parameter;
-        private List<ParameterData> ParameterDataList;
+        public List<ParameterData> ParameterDataList;
 
         [SerializeField] private OP_ED op_ED;
         private List<OP_EDData> op_EDDataList;

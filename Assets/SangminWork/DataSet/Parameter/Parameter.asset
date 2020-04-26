@@ -20,7 +20,7 @@ MonoBehaviour:
     value: 100
   - parameter: clean
     name: "\uAC10\uC5FC\uB3C4"
-    value: 0
+    value: 50
   - parameter: mental
     name: "\uBA58\uD0C8"
     value: 100

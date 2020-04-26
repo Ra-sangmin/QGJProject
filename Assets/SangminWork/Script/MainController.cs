@@ -61,15 +61,23 @@ public class MainController : MonoBehaviour
 
     [SerializeField] Text endingText;
 
+    [SerializeField] Button dirextFinalBtn;
+
+    bool isAM = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        Init();
         StoryReset();
     }
 
     void Init()
     {
-        
+        hungry = DataManager.Instance.ParameterDataList[0].Value;
+        clean = DataManager.Instance.ParameterDataList[1].Value;
+        mental = DataManager.Instance.ParameterDataList[2].Value;
+        cost = DataManager.Instance.ParameterDataList[3].Value;
     }
 
     void StoryReset()
@@ -116,14 +124,26 @@ public class MainController : MonoBehaviour
         else if (storyStateEnum == StoryStateEnum.Sub)
         {
             subActData = DataManager.Instance.GetSubData(subSelectId);
+
             foreach (var id in subActData.Nextacts)
             {
                 FinalActData data = DataManager.Instance.GetFinalData(id);
+                
+                if (data.Name == string.Empty)
+                {
+                    selectResultText.gameObject.SetActive(false);
+                    dirextFinalBtn.gameObject.SetActive(true);
+                    break;
+                }
+
                 selectStrList.Add(data.Name);
             }
+
         }
         else if (storyStateEnum == StoryStateEnum.Final)
         {
+            dirextFinalBtn.gameObject.SetActive(false);
+
             finalActData = DataManager.Instance.GetFinalData(finalSelectId);
 
             raramResultData = DataManager.Instance.GetParamResultData(finalActData.Nextacts);
@@ -153,16 +173,20 @@ public class MainController : MonoBehaviour
     {
         if (storyStateEnum == StoryStateEnum.Start)
         {
+            isAM = !isAM;
+            string amPmStr = isAM ? "오전" : "오후";
+
             msgText.text = string.Format(  "오늘은 전염병으로 자가격리를 실시한 지 {0}일째." +
                                            "\n나의 상태는 " +
-                                           "\n만복도: {1} %" +
-                                           "\n청결함: {2} %" +
-                                           "\n정신력 : {3} %" +
-                                           "\n소지금 : {4}원이다." +
-                                           "\n\n아직 오전(오후)이다.오늘은 이런 것들을 할 수 있을 것 같다.",
-                                           dayCnt, hungry, clean, mental, cost);
+                                           "\n배고픔: {1} %" +
+                                           "\n감염도: {2} %" +
+                                           "\n멘탈 : {3} %" +
+                                           "\n가진돈 : {4}원이다." +
+                                           "\n\n아직 {5}이다.오늘은 이런 것들을 할 수 있을 것 같다.",
+                                           dayCnt, hungry, clean, mental, cost, amPmStr);
             selectResultText.gameObject.SetActive(true);
             resultText.gameObject.SetActive(false);
+            dirextFinalBtn.gameObject.SetActive(false);
 
         }
         if (storyStateEnum == StoryStateEnum.Main)
