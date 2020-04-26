@@ -65,6 +65,10 @@ public class MainController : MonoBehaviour
 
     bool isAM = false;
 
+    bool endingFadeOn = true;
+    public CanvasGroup canvasGroup;
+    public Text endingTouchText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -250,6 +254,8 @@ public class MainController : MonoBehaviour
         else if (storyStateEnum == StoryStateEnum.Ending)
         {
             storyStateEnum = StoryStateEnum.Start;
+
+            canvasGroup.gameObject.SetActive(false);
         }
 
         StoryReset();
@@ -368,7 +374,42 @@ public class MainController : MonoBehaviour
         OP_EDData data = DataManager.Instance.GetOP_EDData(endingId);
         msgText.text = data.Desc;
 
-        dirextFinalBtn.gameObject.SetActive(true);
+        StartCoroutine(EndingDoing());
+        
+    }
+
+
+    IEnumerator EndingDoing()
+    {
+        canvasGroup.gameObject.SetActive(true);
+        endingFadeOn = true;
+        canvasGroup.alpha = 0;
+        endingTouchText.gameObject.SetActive(false);
+
+        yield return new WaitForSeconds(10f);
+
+        while (true)
+        {
+            canvasGroup.alpha += 0.005f;
+
+            yield return new WaitForSeconds(0.01f);
+
+            if (canvasGroup.alpha == 1)
+            {
+                break;
+            }
+        }
+        endingFadeOn = false;
+        endingTouchText.gameObject.SetActive(true);
 
     }
+
+    public void ReStartOn()
+    {        
+        if (endingFadeOn)
+            return;
+
+        SelectTextOn(0);
+    }
+
 }
